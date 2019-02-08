@@ -2,7 +2,8 @@ package praxis.homepractice.services;
 
 import praxis.homepractice.model.User;
 
-public interface AutherizationService {
+public interface AuthorizationService {
         String getToken(User user);
-        boolean isAuthorizad
+        boolean isAuthorizad(String token);
+        User getAuthorizedUser (String token);
 }

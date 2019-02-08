@@ -1,4 +1,6 @@
 package praxis.homepractice.services;
 
-public interface HumanService {
+import praxis.homepractice.model.Human;
+
+public interface HumanService extends CrudService <Human, Integer> {
 }
